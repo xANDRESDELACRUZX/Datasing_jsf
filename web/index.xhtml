@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    
+    <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'/>
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="home-screen/assets/css/styles.css"/>
+
+    <title>Datasignt</title>
+    </head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Datasignt 👨🏼‍⚕️</a>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__img">
+                    <img src="home-screen/assets/img/Datasingt.png" alt="" data-speed="-2" class="move"/>
+                </div>
+
+                <h:form>
+                        <div class="home__data">
+                            <h1 class="home__title">Datasignt <br> Alpha 1.0 🗓 </br> </h1>
+                            <p class="home__description"> ¡Tu salud, mi desafio, tu bienestar, mi compromiso!   <br> Datasignt. </br> </p>
+                            <h:commandButton styleClass="home__button" value="Crud Usuarios ▶️" action="#{indexmb.pagcrudUsuarios()}">
+
+                            </h:commandButton>
+                            <h:commandButton styleClass="home__button" value="Crud Pacientes ▶️" action="#{indexmb.pagcrudPacientes()}">
+
+                            </h:commandButton>
+                            <h:commandButton styleClass="home__button" value="Crud Doctotes ▶️" action="#{indexmb.pagcrudDoctores()}">
+
+                            </h:commandButton>
+                            <h:commandButton styleClass="home__button" value="Crud Citas ▶️" action="#{indexmb.pagcrudCitas()}">
+
+                            </h:commandButton>
+                        </div>
+                </h:form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== GSAP =====-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="home-screen/assets/js/main.js"></script>
+</body>
+
+</html>
